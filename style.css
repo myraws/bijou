@@ -1,0 +1,188 @@
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #333;
+  background-color: #f8f8f8;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  position: fixed;
+  background-color: #fff;
+  border-top: solid 4px #62CAD0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: 0 1px 5px 0 rgba(51, 51, 51, 0.3);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h1 img {
+  height: 40px;
+  margin-top: 8px;
+}
+
+header nav img {
+  height: 50px;
+}
+
+header nav a:hover {
+  opacity: .5;
+  transition: all 0.5s;
+}
+
+.hero {
+  background-image: url(images/hero-05.png);
+  background-size: cover;
+  background-position: right;
+  padding: 120px 0 120px;
+  margin-top: 50px;
+}
+
+.hero h2, .hero p {
+  width: 500px;
+}
+
+.hero h2 {
+  font-size: 32px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.hero {
+  margin-bottom: 40px;
+}
+
+.filters {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.filters-list {
+  margin: 0;
+  padding: 0;
+}
+
+.filters li {
+  display: inline;
+}
+
+.show-filters {
+  display: none;
+}
+
+.filters a {
+  color: #333;
+  margin-right: 20px;
+}
+
+.filters .selected {
+  font-weight: 700;;
+  border-bottom: 3px solid #62CAD0;
+  padding-bottom: 2px;
+}
+
+.products {
+  margin-bottom: 80px;
+}
+
+.products .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 33.333%;
+  position: relative;
+}
+
+.product img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(98,202,208,0.5);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  transition: opacity 0.5s cubic-bezier (0.4,0,0.2,1);
+}
+
+.product:hover .overlay {
+  opacity: 1;
+}
+
+.product h4, .product p {
+  font-weight: 700;
+  margin: 0;
+}
+
+.product h4 {
+  font-size: 24px;
+}
+
+.product p {
+  font-size: 36px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  height: 30px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
